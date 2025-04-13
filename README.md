@@ -53,9 +53,10 @@ The architecture includes convolutional and transpose convolutional layers with 
 The CycleGAN model effectively performed image-to-image translation between sketches and real face images. During training, the model learned to generate visually convincing outputs in both directions—sketch to photo and photo to sketch—while preserving identity features. Over multiple epochs, qualitative improvements were observed with smoother textures and more realistic facial details. The cyclic consistency loss helped maintain structural coherence, ensuring that converting back and forth between domains resulted in minimal loss of information. Overall, the model produced high-quality, perceptually accurate translations.
 
 
+![INTERFACE](https://github.com/user-attachments/assets/875be97b-7e69-4aa0-a094-0ee80fef6c97)
+
 ![Cycle_Image](https://github.com/user-attachments/assets/3c7c8407-dc9e-4de8-b28a-c3b67a698ac4)
 
-![INTERFACE](https://github.com/user-attachments/assets/875be97b-7e69-4aa0-a094-0ee80fef6c97)
 
 
 
