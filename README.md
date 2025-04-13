@@ -13,37 +13,21 @@ The training was done end-to-end on the Person Face Sketches dataset. At test ti
 
 ## Tools and Technologies Used
 Programming Language: Python 
-Google Colab for training
-
-PyTorch for deep learning
-
-Matplotlib & PIL for visualization and image handling
-
-Flask for deploying the real-time UI
+1) Google Colab for training<br>
+2) PyTorch for deep learning<br>
+3) Matplotlib & PIL for visualization and image handling<br>
+4) Flask for deploying the real-time UI<br>
 
 ## Libraries 
-torch, torchvision
-
-PIL
-
-matplotlib
-
-numpy
-
-os, random
+PyTorch, matplotlib, numpy, os, random
 
 ## Techniques Used 
-Conditional GAN (cGAN) for image-to-image translation
-
-Cycle Consistency Loss (implicitly through L1 reconstruction)
-
-Data normalization and preprocessing
-
-Model checkpointing every epoch
-
-Grayscale and RGB image handling
-
-Adversarial and reconstruction losses
+1) Conditional GAN (cGAN) for image-to-image translation
+2) Cycle Consistency Loss (implicitly through L1 reconstruction)
+3) Data normalization and preprocessing
+4) Model checkpointing every epoch
+5) Grayscale and RGB image handling
+6) Adversarial and reconstruction losses
 
 
 ## Setup and Installination 
@@ -53,7 +37,7 @@ Adversarial and reconstruction losses
 4) Install the Dataset from the below link
 5) Train the GAN and generate images
 
-##Datasets
+## Datasets
 [Person Face Sketches Dataset](https://www.kaggle.com/datasets/almightyj/person-face-sketches)
 
 
