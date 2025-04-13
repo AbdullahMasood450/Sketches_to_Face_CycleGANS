@@ -6,36 +6,43 @@
 
 
 ## Project Overview 
-This project implements a CycleGAN-style model to perform image-to-image translation between human face photographs and their corresponding sketches. The model is capable of converting:
-A real face image into a sketch, and
-A sketch into a realistic face image.
-The training was done end-to-end on the Person Face Sketches dataset. At test time, the model supports real-time generation of converted images through an intuitive user interface.
+This project implements a CycleGAN model for image-to-image translation between real face images and their corresponding sketches using the Person Face Sketches dataset. The model is capable of converting face photos to sketches and vice versa, following the original CycleGAN paper's approach.
 
-## Tools and Technologies Used
-Programming Language: Python 
-1) Google Colab for training<br>
-2) PyTorch for deep learning<br>
-3) Matplotlib & PIL for visualization and image handling<br>
-4) Flask for deploying the real-time UI<br>
+## Objective
+The primary goal of this project is to learn a mapping between two domains:
+
+Domain A: Sketches of faces
+Domain B: Realistic photos of faces
+
+At test time, the trained model can:
+Generate a realistic face from a given sketch
+Generate a sketch from a given real face image
 
 ## Libraries 
 PyTorch, matplotlib, numpy, os, random
 
-## Techniques Used 
-1) Conditional GAN (cGAN) for image-to-image translation
-2) Cycle Consistency Loss (implicitly through L1 reconstruction)
-3) Data normalization and preprocessing
-4) Model checkpointing every epoch
-5) Grayscale and RGB image handling
-6) Adversarial and reconstruction losses
+## Model Architecture
+### Generators:
+1) Generator_A2B: Sketch → Real Face
+2) Generator_B2A: Real Face → Sketch
+   
+### Discriminators:
+1) Discriminator_A: Distinguishes between real vs generated sketches
+2) Discriminator_B: Distinguishes between real vs generated face images
+
+The architecture includes convolutional and transpose convolutional layers with ReLU and LeakyReLU activations, and is trained using adversarial and cycle-consistency losses.
 
 
 ## Setup and Installination 
-1) Clone the repository
-2) Run the .ipynb file
-3) Install the required libraries
-4) Install the Dataset from the below link
-5) Train the GAN and generate images
+1) Clone the repository and navigate to the project folder.
+2) Install all required libraries listed in the requirements.txt
+3) Download and prepare the Person Face Sketches dataset.
+4) Organize the dataset into train/photos, train/sketches, val/photos, val/sketches, and test/ folders accordingly.
+5) Run the training script to start training the CycleGAN model.
+6) Launch the Flask application provided in app.py.
+7) Open a web browser and go to http://localhost:5000.
+
+
 
 ## Datasets
 [Person Face Sketches Dataset](https://www.kaggle.com/datasets/almightyj/person-face-sketches)
@@ -48,6 +55,7 @@ The CycleGAN model effectively performed image-to-image translation between sket
 
 ![Cycle_Image](https://github.com/user-attachments/assets/3c7c8407-dc9e-4de8-b28a-c3b67a698ac4)
 
+![INTERFACE}(https://github.com/user-attachments/assets/875be97b-7e69-4aa0-a094-0ee80fef6c97)
 
 
 
