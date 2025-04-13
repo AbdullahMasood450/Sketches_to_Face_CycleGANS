@@ -55,7 +55,7 @@ The CycleGAN model effectively performed image-to-image translation between sket
 
 ![Cycle_Image](https://github.com/user-attachments/assets/3c7c8407-dc9e-4de8-b28a-c3b67a698ac4)
 
-![INTERFACE}(https://github.com/user-attachments/assets/875be97b-7e69-4aa0-a094-0ee80fef6c97)
+![INTERFACE](https://github.com/user-attachments/assets/875be97b-7e69-4aa0-a094-0ee80fef6c97)
 
 
 
