@@ -9,14 +9,14 @@
 This project implements a CycleGAN model for image-to-image translation between real face images and their corresponding sketches using the Person Face Sketches dataset. The model is capable of converting face photos to sketches and vice versa, following the original CycleGAN paper's approach.
 
 ## Objective
-The primary goal of this project is to learn a mapping between two domains:
+The primary goal of this project is to learn a mapping between two domains:<br>
 
-Domain A: Sketches of faces
-Domain B: Realistic photos of faces
+Domain A: Sketches of faces<br>
+Domain B: Realistic photos of faces<br>
 
 At test time, the trained model can:
-Generate a realistic face from a given sketch
-Generate a sketch from a given real face image
+Generate a realistic face from a given sketch<br>
+Generate a sketch from a given real face image<br>
 
 ## Libraries 
 PyTorch, matplotlib, numpy, os, random
