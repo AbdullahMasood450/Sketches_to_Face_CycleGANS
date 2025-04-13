@@ -2,3 +2,5 @@ torch==2.1.0
 torchvision==0.15.0
 matplotlib==3.7.1
 Pillow==9.5.0
+Flask==2.2.3
+uvicorn==0.18.3
